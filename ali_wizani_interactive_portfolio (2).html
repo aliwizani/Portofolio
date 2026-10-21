@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Wizani | Senior Business & Performance Trainer | Sales Leader</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            navy: '#0b1329',
+                            slate: '#0f172a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #2563eb 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .dark .gradient-text-dark {
+            background: linear-gradient(135deg, #34d399 0%, #60a5fa 50%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #059669;
+            border-radius: 9999px;
+        }
+
+        /* Modal Blur Backing */
+        .modal-backdrop {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        /* Print CV Styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 11pt;
+            }
+            .print-full-width {
+                width: 100% !important;
+                max-width: none !important;
+                box-shadow: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-white">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 w-full glass-header bg-white/80 dark:bg-slate-900/80 border-b border-slate-200/80 dark:border-slate-800/80 transition-colors no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo / Name -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-600 to-blue-700 flex items-center justify-center text-white font-extrabold text-xl shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                    AW
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-lg text-slate-900 dark:text-white tracking-tight leading-none">Ali Wizani</h1>
+                    <p class="text-xs text-emerald-600 dark:text-emerald-400 font-bold mt-1">Senior Business & Sales Trainer</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-xs xl:text-sm font-bold">
+                <a href="#about" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition">About</a>
+                <a href="#experience" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Experience</a>
+                <a href="#frameworks" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Frameworks</a>
+                <a href="#skills" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Skills</a>
+                <a href="#projects" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Projects</a>
+                <a href="#education" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Education</a>
+                <a href="#contact" class="px-4 py-2.5 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 shadow-md shadow-emerald-600/20 transition">Contact Me</a>
+            </nav>
+
+            <!-- Right Utilities (Dark Mode + Print + Mobile Hamburger) -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <!-- Print CV CTA -->
+                <button onclick="window.print()" title="Print / Save CV as PDF" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition">
+                    <i class="fa-solid fa-print text-emerald-600"></i>
+                    <span>Print CV</span>
+                </button>
+
+                <!-- Dark Mode Toggle Button -->
+                <button onclick="toggleDarkMode()" id="themeToggleBtn" aria-label="Toggle Dark Mode" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-amber-400 flex items-center justify-center hover:ring-2 hover:ring-emerald-500/50 transition">
+                    <i class="fa-solid fa-moon text-lg dark:hidden"></i>
+                    <i class="fa-solid fa-sun text-lg hidden dark:block"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 flex items-center justify-center">
+                    <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-3 pb-6 space-y-2">
+            <a href="#about" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">About Me</a>
+            <a href="#experience" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience</a>
+            <a href="#frameworks" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Frameworks</a>
+            <a href="#skills" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Skills</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Projects</a>
+            <a href="#education" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Education</a>
+            <button onclick="window.print()" class="w-full text-left px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2">
+                <i class="fa-solid fa-print text-emerald-600"></i> Print / Save PDF
+            </button>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-sm font-bold bg-emerald-600 text-white text-center">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-8 pb-16 md:py-20 overflow-hidden">
+        <!-- Background Glow FX -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column (7 Cols) -->
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    
+                    <!-- Credential Badges -->
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-300/50">
+                            <i class="fa-solid fa-award text-emerald-600"></i> CPD-Certified Trainer
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-300/50">
+                            <i class="fa-solid fa-briefcase"></i> 15+ Years Experience
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300/50">
+                            <i class="fa-solid fa-earth-americas"></i> GCC / MENA Specialist
+                        </span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <div>
+                        <h1 class="text-4xl sm:text-6xl font-black text-slate-900 dark:text-white leading-tight tracking-tight">
+                            Ali Wizani
+                        </h1>
+                        <p class="text-xl sm:text-2xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-2">
+                            Senior Business & Performance Trainer | Sales Leader
+                        </p>
+                        <p class="text-sm font-semibold text-slate-600 dark:text-slate-300 mt-1">
+                            Transforming strategic business objectives into high-impact corporate learning & sales acceleration initiatives.
+                        </p>
+                    </div>
+
+                    <!-- Core Value Proposition Box -->
+                    <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-5 rounded-2xl shadow-xl relative overflow-hidden border border-slate-700">
+                        <div class="absolute right-4 bottom-2 text-slate-700/30 text-8xl pointer-events-none">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm font-medium leading-relaxed relative z-10 text-slate-200">
+                            "Expert in translating complex corporate goals into practical learning frameworks. My focus is on creating customer-centric strategies and delivering interactive workshops that move beyond theory to drive concrete, measurable business outcomes."
+                        </p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <!-- Direct WhatsApp -->
+                        <a href="https://wa.me/96176725360" target="_blank" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/30 transition active:scale-95">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+
+                        <!-- Email Direct -->
+                        <a href="mailto:aliwizani83@gmail.com" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 font-bold text-sm transition">
+                            <i class="fa-solid fa-envelope text-emerald-600"></i>
+                            <span>Email Me</span>
+                        </a>
+
+                        <!-- Print / Download CV Button -->
+                        <button onclick="window.print()" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm shadow-md transition">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>Download CV (PDF)</span>
+                        </button>
+                    </div>
+
+                    <!-- Contact Details Quick Strip -->
+                    <div class="pt-2 flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                        <span><i class="fa-solid fa-location-dot text-emerald-600 mr-1.5"></i> Beirut, Lebanon (GCC / MENA Regional)</span>
+                        <a href="tel:+96176725360" class="hover:text-emerald-600 transition"><i class="fa-solid fa-phone text-emerald-600 mr-1.5"></i> +961 76 725 360</a>
+                        <a href="mailto:aliwizani83@gmail.com" class="hover:text-emerald-600 transition"><i class="fa-solid fa-envelope text-emerald-600 mr-1.5"></i> aliwizani83@gmail.com</a>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right Column / Profile Showcase Card (5 Cols) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Profile Card Container -->
+                        <div class="bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 relative group">
+                            <!-- Image Wrapper -->
+                            <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Ali Wizani Profile" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                                
+                                <!-- Floating Overlay Info -->
+                                <div class="absolute bottom-4 inset-x-4 text-white">
+                                    <p class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Current Location & Reach</p>
+                                    <h3 class="text-lg font-black">Beirut, Lebanon (GCC Active)</h3>
+                                    <p class="text-xs text-slate-300">Consultant & Coach | Mindnavy, ACE, Vinsys, NBK</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badges around Card -->
+                            <div class="absolute -top-4 -left-4 bg-white dark:bg-slate-800 p-3.5 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-ribbon"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Certified Credential</p>
+                                    <p class="text-xs font-extrabold text-slate-800 dark:text-white">CPD Member Trainer</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 p-3.5 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-lg">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Team Mentorship</p>
+                                    <p class="text-xs font-extrabold text-slate-800 dark:text-white">100+ Sales Reps Coached</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Counter Bar -->
+    <section class="bg-gradient-to-r from-emerald-800 via-emerald-700 to-blue-900 text-white py-10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 border-r border-white/10 last:border-none">
+                    <div class="text-3xl sm:text-4xl font-black text-amber-300">15+</div>
+                    <div class="text-xs sm:text-sm font-semibold mt-1 text-emerald-100">Years Leadership & Training</div>
+                </div>
+                <div class="p-4 border-r border-white/10 last:border-none">
+                    <div class="text-3xl sm:text-4xl font-black text-amber-300">100+</div>
+                    <div class="text-xs sm:text-sm font-semibold mt-1 text-emerald-100">Sales Staff Directly Mentored</div>
+                </div>
+                <div class="p-4 border-r border-white/10 last:border-none">
+                    <div class="text-3xl sm:text-4xl font-black text-amber-300">GCC/MENA</div>
+                    <div class="text-xs sm:text-sm font-semibold mt-1 text-emerald-100">Regional Expertise (KSA, Kuwait, Lebanon)</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-black text-amber-300">CPD</div>
+                    <div class="text-xs sm:text-sm font-semibold mt-1 text-emerald-100">Certified Train of Trainers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me / Executive Profile Section -->
+    <section id="about" class="py-16 md:py-24 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Executive Profile</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3">Key Expertise & Value Impact</h2>
+                <div class="w-16 h-1.5 bg-emerald-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow-lg shadow-emerald-600/20 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Training Excellence & Curriculum Design</h3>
+                    <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                        Strategically design and orchestrate bespoke training programs—from advanced sales methodologies and negotiation tactics to leadership development and soft skills mastery—consistently enhancing team capabilities and competitive market advantage.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow-lg shadow-blue-600/20 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Sales Performance & Revenue Growth</h3>
+                    <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                        Proven track record of consulting with corporate enterprises and NGOs to drive measurable improvements in top-line sales, boost on-the-floor staff productivity (OJT), and cultivate sustainable, high-value client relationships.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 hover:shadow-xl transition group">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow-lg shadow-amber-600/20 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Leadership & Strategic Mentorship</h3>
+                    <p class="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
+                        A strategic leader adept at mentoring large, diverse sales teams (62 to 100+ representatives) and consulting on the creation of robust, customer-centric sales frameworks that accelerate business growth and long-term profitability.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline Section -->
+    <section id="experience" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Career Journey</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3">Professional Experience</h2>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">15+ Years across Corporate Retail, Banking, and International Non-Governmental Organizations (NGOs)</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-2 border-emerald-500/30 ml-4 sm:ml-8 space-y-12">
+                
+                <!-- Experience Item 1: Mindnavy -->
+                <div class="relative pl-8 sm:pl-12 group">
+                    <!-- Dot -->
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-600 ring-4 ring-emerald-100 dark:ring-emerald-950 group-hover:scale-125 transition"></div>
+                    
+                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <div>
+                                <span class="bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 text-[11px] font-bold px-2.5 py-0.5 rounded-md">Jan 2025 - Present</span>
+                                <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">Mindnavy Business Consultant & Coach</h3>
+                                <p class="text-xs font-bold text-emerald-600 dark:text-emerald-400">Mindnavy | Lebanon</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-300 font-bold text-sm">
+                                MIND
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                            Provides coaching and consulting for professionals and enterprise teams, focusing on sales excellence, communication mastery, and performance alignment to support business and career growth.
+                        </p>
+                        <ul class="text-xs space-y-2 text-slate-600 dark:text-slate-400 list-disc list-inside mb-4">
+                            <li>Design and update comprehensive training packages (presentations, handouts, interactive activities) focused on business planning, financial literacy, and market analysis.</li>
+                            <li>Conduct workshops, seminars, and one-on-one executive coaching sessions on essential business growth topics.</li>
+                            <li>Utilize participatory and practical training methodologies to ensure active learning and real-world workplace application.</li>
+                        </ul>
+                        <button onclick="openModal('modal-mindnavy')" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline">
+                            <span>View Detailed Impact & Modules</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2: ACE Hardware -->
+                <div class="relative pl-8 sm:pl-12 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100 dark:ring-blue-950 group-hover:scale-125 transition"></div>
+                    
+                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <div>
+                                <span class="bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 text-[11px] font-bold px-2.5 py-0.5 rounded-md">Jul 2023 - Jul 2025</span>
+                                <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">Sales Leadership & OJT Manager</h3>
+                                <p class="text-xs font-bold text-blue-600 dark:text-blue-400">ACE Hardware (Al-Hasawi Group) | Kuwait</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center font-black text-xs">
+                                ACE
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                            Managed On-the-Floor Training (OJT) and coached a team of over 100 sales employees, designing and implementing high-impact training programs in sales management, communication, and problem-solving that led to significant revenue boosts.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs mb-4">
+                            <div class="bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border border-slate-100 dark:border-slate-700">
+                                <p class="font-bold text-slate-900 dark:text-white"><i class="fa-solid fa-users-gear text-emerald-600 mr-1"></i> Leadership Pipeline</p>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Tailored leadership development for Assistant Managers, Supervisors, and Team Leaders.</p>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border border-slate-100 dark:border-slate-700">
+                                <p class="font-bold text-slate-900 dark:text-white"><i class="fa-solid fa-chart-line text-blue-600 mr-1"></i> Revenue & Productivity</p>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Boosted individual sales quotas and overall store performance metrics.</p>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border border-slate-100 dark:border-slate-700">
+                                <p class="font-bold text-slate-900 dark:text-white"><i class="fa-solid fa-user-check text-amber-600 mr-1"></i> Team Retention</p>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Collaborated with HR for seamless onboarding, significantly reducing staff turnover.</p>
+                            </div>
+                        </div>
+                        <button onclick="openModal('modal-ace')" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline">
+                            <span>View Leadership & OJT Details</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3: Vinsys -->
+                <div class="relative pl-8 sm:pl-12 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-600 ring-4 ring-amber-100 dark:ring-amber-950 group-hover:scale-125 transition"></div>
+                    
+                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <div>
+                                <span class="bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-md">Feb 2025</span>
+                                <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">Corporate Problem-Solving & Innovation Trainer</h3>
+                                <p class="text-xs font-bold text-amber-600 dark:text-amber-400">Vinsys Training Expertise | Saudi Arabia</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center font-black text-xs">
+                                VINSYS
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            Delivered customized problem-solving workshops for corporate teams across Saudi Arabia, equipping participants with practical tools for decision-making, root cause analysis, and collaborative solutions.
+                        </p>
+                        <button onclick="openModal('modal-vinsys')" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline">
+                            <span>View Workshop Case Studies</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4: NBK -->
+                <div class="relative pl-8 sm:pl-12 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-100 dark:ring-slate-800 group-hover:scale-125 transition"></div>
+                    
+                    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <div>
+                                <span class="bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-300 text-[11px] font-bold px-2.5 py-0.5 rounded-md">Banking Sector Leadership</span>
+                                <h3 class="text-xl font-black text-slate-900 dark:text-white mt-1">Customer Service Trainer & System Migration Project Control</h3>
+                                <p class="text-xs font-bold text-slate-600 dark:text-slate-400">National Bank of Kuwait (NBK) | Kuwait</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-blue-900 text-white flex items-center justify-center font-black text-xs">
+                                NBK
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            Designed and led comprehensive customer service and body language training for banking staff while providing project control during critical core banking system migrations.
+                        </p>
+                        <button onclick="openModal('modal-nbk')" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-300 hover:underline">
+                            <span>View Banking Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Problem-Solving & Innovation Frameworks Section -->
+    <section id="frameworks" class="py-16 md:py-24 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Applied Methodology</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3">Problem-Solving & Innovation Frameworks</h2>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Leveraging established global frameworks to foster critical thinking and drive operational excellence</p>
+            </div>
+
+            <!-- Frameworks Visual Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Framework 1: SCAMPER -->
+                <div class="bg-gradient-to-br from-emerald-50 to-white dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl border border-emerald-200/80 dark:border-slate-700 shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-base mb-3">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 dark:text-white">SCAMPER Method</h3>
+                    <p class="text-[11px] text-emerald-700 dark:text-emerald-400 font-bold mb-2">Ideation & Process Innovation</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        A creative thinking tool that prompts innovation around existing processes: <strong>S</strong>ubstitute, <strong>C</strong>ombine, <strong>A</strong>dapt, <strong>M</strong>odify, <strong>P</strong>ut to another use, <strong>E</strong>liminate, and <strong>R</strong>everse.
+                    </p>
+                </div>
+
+                <!-- Framework 2: Ishikawa (Fishbone) -->
+                <div class="bg-gradient-to-br from-blue-50 to-white dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl border border-blue-200/80 dark:border-slate-700 shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-base mb-3">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 dark:text-white">Ishikawa (Fishbone) Diagram</h3>
+                    <p class="text-[11px] text-blue-700 dark:text-blue-400 font-bold mb-2">Root Cause Analysis</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        A visual diagramming tool for identifying potential causes of an operational problem to uncover its root cause, prevent recurring errors, and enhance overall process quality.
+                    </p>
+                </div>
+
+                <!-- Framework 3: The 6Ms -->
+                <div class="bg-gradient-to-br from-amber-50 to-white dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl border border-amber-200/80 dark:border-slate-700 shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold text-base mb-3">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 dark:text-white">The 6Ms Classification</h3>
+                    <p class="text-[11px] text-amber-700 dark:text-amber-400 font-bold mb-2">Quality & Operational Auditing</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Classifies operational issues into six key vectors: <strong>Man</strong> (People), <strong>Machine</strong>, <strong>Material</strong>, <strong>Method</strong>, <strong>Measurement</strong>, and <strong>Mother Nature</strong> (Environment).
+                    </p>
+                </div>
+
+                <!-- Framework 4: Value Proposition Canvas -->
+                <div class="bg-gradient-to-br from-purple-50 to-white dark:from-slate-800 dark:to-slate-900 p-6 rounded-3xl border border-purple-200/80 dark:border-slate-700 shadow-sm hover:shadow-lg transition">
+                    <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-base mb-3">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="font-black text-base text-slate-900 dark:text-white">Value Proposition Canvas</h3>
+                    <p class="text-[11px] text-purple-700 dark:text-purple-400 font-bold mb-2">Customer-Centric Product Fit</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Ensures product-market alignment by mapping customer jobs, pain points, and gain creators directly against product features and business value propositions.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills & Core Competencies Section -->
+    <section id="skills" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Capabilities Matrix</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3">Skills & Core Competencies</h2>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Filter and search through technical, leadership, and soft skills</p>
+            </div>
+
+            <!-- Controls: Category Buttons + Live Search -->
+            <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    
+                    <!-- Filter Tabs -->
+                    <div class="flex flex-wrap items-center gap-2 text-xs font-bold w-full md:w-auto">
+                        <button onclick="filterSkillCategory('all')" id="btn-skill-all" class="skill-tab-btn bg-emerald-600 text-white px-3.5 py-2 rounded-xl transition">All Skills</button>
+                        <button onclick="filterSkillCategory('leadership')" id="btn-skill-leadership" class="skill-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3.5 py-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition">Leadership & Strategy</button>
+                        <button onclick="filterSkillCategory('sales')" id="btn-skill-sales" class="skill-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3.5 py-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition">Sales & Coaching</button>
+                        <button onclick="filterSkillCategory('analytical')" id="btn-skill-analytical" class="skill-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3.5 py-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition">Analytical & Problem Solving</button>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="relative w-full md:w-72">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="skillSearch" oninput="searchSkills()" placeholder="Search skill..." class="w-full pr-3 pl-9 py-2 bg-slate-50 dark:bg-slate-800 text-xs text-slate-800 dark:text-slate-100 rounded-xl border border-slate-200 dark:border-slate-700 outline-none focus:border-emerald-500">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Skill Badges Grid -->
+            <div id="skillsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="skill-card leadership bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Leadership Proficiency</h4>
+                            <p class="text-[10px] text-slate-400">Team Governance & Mentorship</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 px-2.5 py-1 rounded-md">Expert</span>
+                </div>
+
+                <div class="skill-card sales bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Exceptional Communication</h4>
+                            <p class="text-[10px] text-slate-400">Body Language & Negotiation</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 px-2.5 py-1 rounded-md">Master</span>
+                </div>
+
+                <div class="skill-card leadership bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Team Building Expertise</h4>
+                            <p class="text-[10px] text-slate-400">Onboarding & Culture Alignment</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 px-2.5 py-1 rounded-md">Expert</span>
+                </div>
+
+                <div class="skill-card analytical bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-clock flex-shrink-0"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Time & Project Management</h4>
+                            <p class="text-[10px] text-slate-400">System Migration & Control</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-purple-100 dark:bg-purple-950 text-purple-800 dark:text-purple-300 px-2.5 py-1 rounded-md">Advanced</span>
+                </div>
+
+                <div class="skill-card analytical bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Advanced Problem-Solving</h4>
+                            <p class="text-[10px] text-slate-400">Fishbone, SCAMPER & 6Ms</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 px-2.5 py-1 rounded-md">Master</span>
+                </div>
+
+                <div class="skill-card sales bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">High Emotional Intelligence</h4>
+                            <p class="text-[10px] text-slate-400">Conflict Resolution & Empathy</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300 px-2.5 py-1 rounded-md">Master</span>
+                </div>
+
+                <div class="skill-card sales bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Coaching & Development</h4>
+                            <p class="text-[10px] text-slate-400">CPD Train of Trainers</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 px-2.5 py-1 rounded-md">Expert</span>
+                </div>
+
+                <div class="skill-card leadership bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-slate-500/10 text-slate-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Cultural Sensitivity (GCC)</h4>
+                            <p class="text-[10px] text-slate-400">MENA Corporate Context</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-300 px-2.5 py-1 rounded-md">Native/Expert</span>
+                </div>
+
+                <div class="skill-card analytical bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">Analytical & Market Research</h4>
+                            <p class="text-[10px] text-slate-400">Pricing & Feasibility Analysis</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-bold bg-purple-100 dark:bg-purple-950 text-purple-800 dark:text-purple-300 px-2.5 py-1 rounded-md">Advanced</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Projects & NGO Initiatives Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Portfolio Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3">Projects & Community Initiatives</h2>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Specialized training programs for corporate entities, startups, and international NGOs</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex justify-center gap-2 mb-10 overflow-x-auto pb-2 text-xs font-bold">
+                <button onclick="filterProjects('all')" id="proj-all" class="proj-tab-btn bg-emerald-600 text-white px-4 py-2 rounded-xl transition shadow-sm">All Projects</button>
+                <button onclick="filterProjects('ngo')" id="proj-ngo" class="proj-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 transition">NGO & Entrepreneurship</button>
+                <button onclick="filterProjects('corporate')" id="proj-corporate" class="proj-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 transition">Corporate Workshops</button>
+                <button onclick="filterProjects('fashion')" id="proj-fashion" class="proj-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 transition">Fashion & Retail</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: ANERA -->
+                <div class="project-card ngo bg-slate-50 dark:bg-slate-800/60 rounded-3xl p-6 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2.5 py-1 rounded-md">ANERA Partnership</span>
+                            <i class="fa-solid fa-handshake-angle text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mb-2">ANERA Entrepreneurship & Business Development</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Training and coaching designed to guide startups and microbusinesses through advanced business planning, formalization, strategies for scaling operations, and securing investment finance.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 dark:border-slate-700 mt-4 flex items-center justify-between text-xs font-bold text-blue-600 dark:text-blue-400">
+                        <span>Startup Scaling & Funding</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 2: WPA -->
+                <div class="project-card ngo bg-slate-50 dark:bg-slate-800/60 rounded-3xl p-6 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-[10px] font-bold px-2.5 py-1 rounded-md">WPA Initiative</span>
+                            <i class="fa-solid fa-house-user text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mb-2">WPA Home-Based Business Support Project</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Focuses on foundational micro-enterprise skills, digital marketing, costing, and compliance necessary for vulnerable women to successfully operate small-scale businesses from their homes.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 dark:border-slate-700 mt-4 flex items-center justify-between text-xs font-bold text-purple-600 dark:text-purple-400">
+                        <span>Micro-Enterprise Empowerment</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 3: Kheit Modiste -->
+                <div class="project-card fashion bg-slate-50 dark:bg-slate-800/60 rounded-3xl p-6 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-1 rounded-md">Fashion Industry</span>
+                            <i class="fa-solid fa-scissors text-amber-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mb-2">Fashion Forward Program (Kheit Modiste)</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Training targeting fashion entrepreneurs, specializing in industry-specific product costing, brand development, production streamlining, and accessing retail market channels.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 dark:border-slate-700 mt-4 flex items-center justify-between text-xs font-bold text-amber-600 dark:text-amber-400">
+                        <span>Costing & Brand Strategy</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 4: Vinsys Corporate -->
+                <div class="project-card corporate bg-slate-50 dark:bg-slate-800/60 rounded-3xl p-6 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-md">Vinsys Saudi Arabia</span>
+                            <i class="fa-solid fa-lightbulb text-emerald-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mb-2">Corporate Problem-Solving Workshops</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Facilitated interactive workshops and case studies to help enterprise corporate teams identify root causes, implement Fishbone & SCAMPER frameworks, and streamline collaborative decision-making.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 dark:border-slate-700 mt-4 flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                        <span>Corporate Decision-Making</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 5: ACE OJT -->
+                <div class="project-card corporate bg-slate-50 dark:bg-slate-800/60 rounded-3xl p-6 border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-red-100 text-red-800 text-[10px] font-bold px-2.5 py-1 rounded-md">ACE Retail Kuwait</span>
+                            <i class="fa-solid fa-store text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mb-2">100+ Staff OJT & Leadership Onboarding</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Comprehensive sales floor coaching, management leadership tracks for Assistant Managers and Team Leaders, and collaborative HR onboarding to drive store revenues.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 dark:border-slate-700 mt-4 flex items-center justify-between text-xs font-bold text-red-600 dark:text-red-400">
+                        <span>Retail Leadership Pipeline</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education, Certifications & Partner Network Section -->
+    <section id="education" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">Academic & Credentials</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mt-3">Education & Certifications</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                
+                <!-- Certification Card -->
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 flex items-start gap-4 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold text-2xl shrink-0 shadow-lg shadow-emerald-600/20">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">November 2025</span>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mt-0.5">CPD-Certified Train of Trainers (TOT)</h3>
+                        <p class="text-xs font-bold text-slate-600 dark:text-slate-300">The CPD Certification Service | Mindnavy, Lebanon</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Internationally recognized credential in designing, structuring, and facilitating corporate training methodologies.</p>
+                    </div>
+                </div>
+
+                <!-- Degree Card -->
+                <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 flex items-start gap-4 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-bold text-2xl shrink-0 shadow-lg shadow-blue-600/20">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 dark:text-blue-400">June 2006</span>
+                        <h3 class="font-black text-lg text-slate-900 dark:text-white mt-0.5">Bachelor's Degree in Business Administration (BBA)</h3>
+                        <p class="text-xs font-bold text-slate-600 dark:text-slate-300">Australian College of Kuwait (ACK) | Kuwait</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Comprehensive foundation in organizational management, sales strategy, and business leadership.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Professional Workshops Strip -->
+            <div class="bg-amber-500/10 border border-amber-500/30 p-6 rounded-3xl flex flex-wrap items-center justify-between gap-4 mb-16">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-xl shrink-0">
+                        <i class="fa-solid fa-chalkboard"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-base text-slate-900 dark:text-white">Additional Professional Workshops & Seminars</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">NBK Customer Service & Body Language Workshop • Credit Card Risk Management & Fraud Audit</p>
+                    </div>
+                </div>
+                <span class="text-xs font-bold bg-amber-500 text-white px-4 py-2 rounded-xl shadow-xs">Continuous Learning</span>
+            </div>
+
+            <!-- Corporate Partner Logos Showcase -->
+            <div class="text-center">
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Brands, Organizations & Institutions</p>
+                <div class="flex flex-wrap items-center justify-center gap-6 opacity-80 grayscale hover:grayscale-0 transition duration-500">
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-slate-800 dark:text-slate-200 shadow-xs">MINDNAVY</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-amber-600 shadow-xs">CPD MEMBER</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-red-600 shadow-xs">ACE HARDWARE</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-blue-900 dark:text-blue-400 shadow-xs">NBK BANK</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-amber-500 shadow-xs">VINSYS KSA</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-blue-600 shadow-xs">ANERA</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-purple-600 shadow-xs">WPA NGO</span>
+                    <span class="bg-white dark:bg-slate-900 px-5 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 font-extrabold text-sm text-slate-700 dark:text-slate-300 shadow-xs">MODISTE</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Contact & WhatsApp Dispatch Section -->
+    <section id="contact" class="py-16 md:py-24 bg-slate-900 text-white transition-colors relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact Info Left (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-emerald-400 text-xs font-black uppercase tracking-widest bg-emerald-950 px-3.5 py-1 rounded-full border border-emerald-800">Direct Engagement</span>
+                        <h2 class="text-3xl sm:text-4xl font-black mt-3">Let's Discuss Your Team's Growth</h2>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                            Whether you need a corporate sales workshop, executive coaching, problem-solving facilitation, or custom curriculum design, reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-4 bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-400 uppercase">Phone & Direct WhatsApp</p>
+                                <a href="https://wa.me/96176725360" target="_blank" class="font-bold text-sm hover:text-emerald-400 transition">+961 76 725 360</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-400 uppercase">Email Address</p>
+                                <a href="mailto:aliwizani83@gmail.com" class="font-bold text-sm hover:text-blue-400 transition">aliwizani83@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-400 uppercase">Geographic Reach</p>
+                                <p class="font-bold text-sm">GCC (KSA, Kuwait) & MENA Region (Lebanon)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Booking Form Right (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-800/90 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-slate-700 shadow-2xl">
+                        <h3 class="font-black text-xl mb-4 text-emerald-400">Send an Immediate Inquiry</h3>
+                        
+                        <form onsubmit="event.preventDefault();" class="space-y-4 text-xs">
+                            <div>
+                                <label class="block text-slate-300 font-bold mb-1">Your Name / Organization <span class="text-red-400">*</span></label>
+                                <input type="text" id="senderName" placeholder="e.g. John Doe - HR Director at Retail Co." class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-white outline-none focus:border-emerald-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-slate-300 font-bold mb-1">Inquiry Category / Service Needed <span class="text-red-400">*</span></label>
+                                <select id="inquiryType" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-white outline-none focus:border-emerald-500">
+                                    <option value="Corporate Sales Training Workshop">Corporate Sales Training Workshop</option>
+                                    <option value="Problem Solving & SCAMPER Facilitation">Problem Solving & SCAMPER Facilitation</option>
+                                    <option value="1-on-1 Executive & Leadership Coaching">1-on-1 Executive & Leadership Coaching</option>
+                                    <option value="NGO Entrepreneurship Support Program">NGO Entrepreneurship Support Program</option>
+                                    <option value="Custom Training Material Design">Custom Training Material Design</option>
+                                    <option value="Job Opportunity / Executive Partnership">Job Opportunity / Executive Partnership</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-slate-300 font-bold mb-1">Message Details or Proposed Dates</label>
+                                <textarea id="senderMsg" rows="3" placeholder="Briefly describe your team's objectives or desired timeline..." class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-white outline-none focus:border-emerald-500 resize-none"></textarea>
+                            </div>
+
+                            <!-- Buttons Dual Generator -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                                <button onclick="sendToWhatsApp()" type="button" class="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>Send via WhatsApp</span>
+                                </button>
+                                <button onclick="sendToEmail()" type="button" class="w-full py-3.5 px-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 transition">
+                                    <i class="fa-solid fa-paper-plane text-sm"></i>
+                                    <span>Send via Email</span>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800 text-xs no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-black text-xs flex items-center justify-center">AW</div>
+                <span class="font-bold text-slate-300">Ali Wizani © 2026</span>
+            </div>
+            <p>Interactive Digital Portfolio & Web CV • Senior Sales & Performance Trainer</p>
+        </div>
+    </footer>
+
+    <!-- EXPERIENCE DETAIL MODALS CONTAINER -->
+    <div id="modalOverlay" class="fixed inset-0 z-50 hidden modal-backdrop bg-slate-950/80 flex items-center justify-center p-4 overflow-y-auto no-print">
+        <div id="modalContent" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 w-full max-w-2xl rounded-3xl p-6 sm:p-8 shadow-2xl relative transform transition-all duration-300 scale-95 opacity-0">
+            <!-- Modal Close Button -->
+            <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Dynamic Modal Inner Content -->
+            <div id="modalInner"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactivity Logic -->
+    <script>
+        // Modal Data Store
+        const modalData = {
+            'modal-mindnavy': {
+                title: 'Mindnavy Business Consultant & Coach',
+                subtitle: 'Lebanon | Jan 2025 - Present',
+                badge: 'Business Development & Coaching',
+                content: `
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        At Mindnavy, Ali leads key corporate consulting initiatives focusing on aligning sales teams with executive business goals and training staff in modern commercial techniques.
+                    </p>
+                    <h4 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Core Modules & Impact:</h4>
+                    <ul class="text-xs space-y-2 text-slate-600 dark:text-slate-300 list-disc list-inside mb-4">
+                        <li><strong>Curriculum Engineering:</strong> Created comprehensive training decks, handouts, and practical activities covering business planning, financial literacy, and pricing analysis.</li>
+                        <li><strong>Executive Coaching:</strong> Conducts one-on-one sessions for mid-level managers and entrepreneurs to refine decision-making and negotiation tactics.</li>
+                        <li><strong>Participatory Learning:</strong> Employs interactive role-plays and case studies to guarantee skills transfer into daily operations.</li>
+                    </ul>
+                `
+            },
+            'modal-ace': {
+                title: 'ACE Hardware (Al-Hasawi Group) - Sales Leadership & OJT',
+                subtitle: 'Kuwait | Jul 2023 - Jul 2025',
+                badge: '100+ Staff Coached',
+                content: `
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Spearheaded retail floor training and managed over 100 sales employees across Kuwait, resulting in reduced turnover, increased productivity, and enhanced sales revenue.
+                    </p>
+                    <h4 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Key Achievements & Leadership Tracks:</h4>
+                    <ul class="text-xs space-y-2 text-slate-600 dark:text-slate-300 list-disc list-inside mb-4">
+                        <li><strong>Assistant Managers Track:</strong> Focused on operational oversight, strategic decision-making, and seamless daily workflow.</li>
+                        <li><strong>Supervisors & Team Leaders:</strong> Tailored modules on task delegation, performance tracking, and conflict resolution.</li>
+                        <li><strong>Marketing & HR Collaboration:</strong> Executed precise promotional campaigns and streamlined new hire onboarding, dramatically reducing early staff attrition.</li>
+                    </ul>
+                `
+            },
+            'modal-vinsys': {
+                title: 'Vinsys Corporate Problem-Solving Workshops',
+                subtitle: 'Saudi Arabia | Feb 2025',
+                badge: 'Saudi Arabia Corporate Track',
+                content: `
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Delivered high-intensity workshops for corporate teams in KSA to institutionalize structured problem-solving methodologies and root-cause analysis.
+                    </p>
+                    <h4 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Frameworks Applied in KSA:</h4>
+                    <ul class="text-xs space-y-2 text-slate-600 dark:text-slate-300 list-disc list-inside mb-4">
+                        <li><strong>SCAMPER Method:</strong> Prompted innovation around existing workflows (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse).</li>
+                        <li><strong>Ishikawa Fishbone Diagram:</strong> Taught teams to categorize root causes into Man, Machine, Material, Method, Measurement, and Environment (6Ms).</li>
+                        <li><strong>Group Problem Solving:</strong> Facilitated live case studies to strengthen cross-departmental collaboration and decision-making.</li>
+                    </ul>
+                `
+            },
+            'modal-nbk': {
+                title: 'National Bank of Kuwait (NBK) - Training & Project Control',
+                subtitle: 'Kuwait | Banking Sector',
+                badge: 'Banking & System Migration',
+                content: `
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Delivered customer service excellence programs while holding critical project oversight duties during core banking migrations.
+                    </p>
+                    <h4 class="font-bold text-sm mb-2 text-slate-900 dark:text-white">Highlights:</h4>
+                    <ul class="text-xs space-y-2 text-slate-600 dark:text-slate-300 list-disc list-inside mb-4">
+                        <li><strong>Customer Service & Body Language:</strong> Designed and facilitated workshops for front-line branch staff to boost client satisfaction metrics.</li>
+                        <li><strong>System Migration Oversight:</strong> Provided quality assurance during major core banking migrations, ensuring minimal operational downtime and data integrity.</li>
+                        <li><strong>Risk Awareness:</strong> Conducted training on credit card risk management protocols and fraud mitigation.</li>
+                    </ul>
+                `
+            }
+        };
+
+        // Open Modal
+        function openModal(key) {
+            const item = modalData[key];
+            if (!item) return;
+
+            const inner = document.getElementById('modalInner');
+            inner.innerHTML = `
+                <span class="inline-block px-3 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold text-[10px] rounded-full mb-2">${item.badge}</span>
+                <h3 class="text-xl font-black text-slate-900 dark:text-white">${item.title}</h3>
+                <p class="text-xs font-bold text-emerald-600 dark:text-emerald-400 mb-4">${item.subtitle}</p>
+                ${item.content}
+            `;
+
+            const overlay = document.getElementById('modalOverlay');
+            const content = document.getElementById('modalContent');
+
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                content.classList.remove('scale-95', 'opacity-0');
+                content.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        // Close Modal
+        function closeModal() {
+            const overlay = document.getElementById('modalOverlay');
+            const content = document.getElementById('modalContent');
+
+            content.classList.remove('scale-100', 'opacity-100');
+            content.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        // Close Modal on backdrop click
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // Close Modal on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Dark Mode Toggle Logic
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Initialize Theme Preference
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Mobile Menu Drawer Handler
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Skills Filter by Category
+        function filterSkillCategory(cat) {
+            const btns = document.querySelectorAll('.skill-tab-btn');
+            btns.forEach(b => {
+                b.className = 'skill-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-3.5 py-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition';
+            });
+
+            const activeBtn = document.getElementById(`btn-skill-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = 'skill-tab-btn bg-emerald-600 text-white px-3.5 py-2 rounded-xl transition';
+            }
+
+            const cards = document.querySelectorAll('.skill-card');
+            cards.forEach(card => {
+                if (cat === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.classList.contains(cat)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Realtime Skills Search
+        function searchSkills() {
+            const query = document.getElementById('skillSearch').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.skill-card');
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Projects Filter Tab Handler
+        function filterProjects(cat) {
+            const tabs = document.querySelectorAll('.proj-tab-btn');
+            tabs.forEach(t => {
+                t.className = 'proj-tab-btn bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 transition';
+            });
+
+            const activeBtn = document.getElementById(`proj-${cat}`);
+            if (activeBtn) {
+                activeBtn.className = 'proj-tab-btn bg-emerald-600 text-white px-4 py-2 rounded-xl transition shadow-sm';
+            }
+
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (cat === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.classList.contains(cat)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // WhatsApp Direct Dispatch Form Handler
+        function sendToWhatsApp() {
+            const name = document.getElementById('senderName').value.trim();
+            const inquiry = document.getElementById('inquiryType').value;
+            const msg = document.getElementById('senderMsg').value.trim();
+
+            if (!name) {
+                alert('Please enter your name or organization before proceeding.');
+                document.getElementById('senderName').focus();
+                return;
+            }
+
+            let text = `Hello Ali Wizani,\n\n`;
+            text += `My name is: *${name}*\n`;
+            text += `Inquiry Category: *${inquiry}*\n`;
+            if (msg) text += `Message: ${msg}\n\n`;
+            text += `Sent via your Digital Executive Portfolio.`;
+
+            const url = `https://wa.me/96176725360?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        }
+
+        // Email Form Handler
+        function sendToEmail() {
+            const name = document.getElementById('senderName').value.trim();
+            const inquiry = document.getElementById('inquiryType').value;
+            const msg = document.getElementById('senderMsg').value.trim();
+
+            if (!name) {
+                alert('Please enter your name or organization before proceeding.');
+                document.getElementById('senderName').focus();
+                return;
+            }
+
+            const subject = encodeURIComponent(`Inquiry: ${inquiry} - ${name}`);
+            let body = `Hello Ali Wizani,\n\n`;
+            body += `Sender/Organization: ${name}\n`;
+            body += `Inquiry Type: ${inquiry}\n\n`;
+            if (msg) body += `Message Details: ${msg}\n\n`;
+            body += `Best regards.`;
+
+            window.location.href = `mailto:aliwizani83@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+        }
+    </script>
+</body>
+</html>
